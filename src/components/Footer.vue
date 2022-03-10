@@ -3,7 +3,7 @@
 		<div class="flex-box flex-h-between">
 			<!-- 信息 -->
 			<div>
-				<div class="title">{{ $t('footer.information') }}</div>
+				<div class="title">{{ $t('header.about') }}</div>
 				<div class="info flex-box">
 					<div class="nav-link" @click="linkTo('/about/siteinfo')">{{ $t('header.siteInfo') }}</div>
 					<div class="nav-link" @click="linkTo('/about/friends')">{{ $t('header.friends') }}</div>

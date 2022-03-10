@@ -9,13 +9,8 @@ export default {
 		friends: 'FRIENDS LINK'
 	},
 	footer: {
-		information: 'INFORMATION',
-		store: 'STORE',
-		about: 'ABOUT',
 		wechat: 'WECHAT',
-		redbook: 'RED',
-		follow: 'FOLLOW',
-		backtotop: 'Back to top'
+		follow: 'FOLLOW'
 	},
 	explore: {
 		learnmore: 'Load more',

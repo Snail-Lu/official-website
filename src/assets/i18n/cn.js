@@ -8,10 +8,8 @@ export default {
 		friends: '友情链接'
 	},
 	footer: {
-		information: '信息',
 		wechat: '官方微信',
-		follow: '关注',
-		backtotop: '回到顶部'
+		follow: '关注'
 	},
 	collection: {
 		collection: '系列'
