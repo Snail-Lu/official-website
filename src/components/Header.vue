@@ -170,8 +170,8 @@ export default {
 	margin-right: 30px;
 }
 .nav-box-web {
-	padding: 28px 70px;
-	font-size: 14px;
+	padding: 18px 80px;
+	font-size: 16px;
 	margin: 0 auto;
 
 	.nav-item {
@@ -219,17 +219,17 @@ export default {
 	transition: height 0.2s;
 	overflow: hidden;
 	position: absolute;
-	top: 93px;
+	top: 86px;
 	left: 0;
 	width: 100%;
 	background-color: #fff;
 	text-align: center;
 	box-sizing: border-box;
 	height: 0;
-	padding-left: 421px;
+	padding-left: 429px;
 
 	&-cn {
-		padding-left: 388px;
+		padding-left: 402px;
 	}
 
 	.sub-nav-item {
