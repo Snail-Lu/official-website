@@ -33,10 +33,19 @@
 					</div>
 				</div>
 			</div>
-			<div :title="language == 'cn' ? '切换语言' : 'switch language'" class="change-language-btn">
-				<span :class="[language == 'en' ? 'language-unselected' : '']" @click="switchLanguage('cn')">中</span>
-				<span> | </span>
-				<span :class="[language == 'cn' ? 'language-unselected' : '']" @click="switchLanguage('en')">EN</span>
+			<div :title="language == 'cn' ? '切换语言' : 'switch language'" class="change-language-btn flex-box">
+				<span
+					class="btn flex-item-1"
+					:class="[language == 'cn' ? 'selected-btn' : '']"
+					@click="switchLanguage('cn')"
+					>中</span
+				>
+				<span
+					class="btn flex-item-1"
+					:class="[language == 'en' ? 'selected-btn' : '']"
+					@click="switchLanguage('en')"
+					>EN</span
+				>
 			</div>
 		</div>
 		<!-- web端子导航栏 -->
@@ -61,10 +70,19 @@
 		<div class="nav-box-wap flex-box flex-h-between flex-v-center">
 			<div class="nav-list-response" @click="showWapNavPop = true">☰</div>
 			<img class="logo" src="/src/assets/images/logo.png" title="首页" @click="linkTo('/')" />
-			<div :title="language == 'cn' ? '切换语言' : 'switch language'" class="change-language-btn">
-				<span :class="[language == 'en' ? 'language-unselected' : '']" @click="switchLanguage('cn')">中</span>
-				<span> | </span>
-				<span :class="[language == 'cn' ? 'language-unselected' : '']" @click="switchLanguage('en')">EN</span>
+			<div :title="language == 'cn' ? '切换语言' : 'switch language'" class="change-language-btn flex-box">
+				<span
+					class="btn flex-item-1"
+					:class="[language == 'cn' ? 'selected-btn' : '']"
+					@click="switchLanguage('cn')"
+					>中</span
+				>
+				<span
+					class="btn flex-item-1"
+					:class="[language == 'en' ? 'selected-btn' : '']"
+					@click="switchLanguage('en')"
+					>EN</span
+				>
 			</div>
 		</div>
 
@@ -181,10 +199,20 @@ export default {
 	cursor: pointer;
 	user-select: none;
 	font-size: 14px;
+	border: 1px solid #ccc;
+	width: 80px;
+	color: #888;
+	background-color: #ccc;
+
+	.btn {
+		width: 40px;
+		text-align: center;
+	}
 }
 
-.language-unselected {
-	color: #ccc;
+.selected-btn {
+	color: #000;
+	background-color: #fff;
 }
 
 .sub-nav-box {
