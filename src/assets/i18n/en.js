@@ -1,5 +1,6 @@
 export default {
 	header: {
+		home: 'HOME',
 		explore: 'EXPLORE',
 		collection: 'COLLECTION',
 		about: 'ABOUT',

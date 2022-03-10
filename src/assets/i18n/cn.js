@@ -1,5 +1,6 @@
 export default {
 	header: {
+		home: '首页',
 		explore: '探索',
 		collection: '系列',
 		about: '关于',

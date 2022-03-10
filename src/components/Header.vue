@@ -4,11 +4,14 @@
 		<div class="nav-box-web flex-box flex-h-between flex-v-center">
 			<div class="flex-box flex-v-center">
 				<img class="logo" src="/src/assets/images/logo.png" title="首页" @click="linkTo('/')" />
+				<div :class="{ 'nav-item': true, 'nav-item-active': routerPath == '/' }" @click="linkTo('/')">
+					<span class="nav-item-txt">{{ $t('header.home') }}</span>
+				</div>
 				<div class="nav-list flex-box">
 					<div
 						:class="{
 							'nav-item': true,
-							'nav-item-active': routerPath == '/collection',
+							'nav-item-active': routerPath.includes('/collection'),
 							'nav-item-en': language == 'en'
 						}"
 						@click="linkTo('/collection')"
@@ -16,7 +19,7 @@
 						<span class="nav-item-txt">{{ $t('header.collection') }}</span>
 					</div>
 					<div
-						:class="{ 'nav-item': true, 'nav-item-active': routerPath == '/explore' }"
+						:class="{ 'nav-item': true, 'nav-item-active': routerPath.includes('/explore') }"
 						@click="linkTo('/explore')"
 					>
 						<span class="nav-item-txt">{{ $t('header.explore') }}</span>
@@ -24,7 +27,7 @@
 					<div
 						:class="{
 							'nav-item': true,
-							'nav-item-active': routerPath == '/about'
+							'nav-item-active': routerPath.includes('/about')
 						}"
 						@mouseover="showSubNav"
 						@mouseout="hideSubNav"
@@ -97,6 +100,7 @@
 				/>
 			</div>
 			<div>
+				<div class="nav-item-wap" @click="linkTo('/')">{{ $t('header.home') }}</div>
 				<div class="nav-item-wap" @click="linkTo('/collection')">{{ $t('header.collection') }}</div>
 				<div class="nav-item-wap" @click="linkTo('/explore')">{{ $t('header.explore') }}</div>
 				<div class="nav-item-wap">{{ $t('header.about') }}</div>
@@ -180,11 +184,18 @@ export default {
 		cursor: pointer;
 		position: relative;
 
+		&-active {
+			.nav-item-txt {
+				border-bottom: 1px solid #000;
+			}
+		}
+
 		&-txt {
 			height: 25px;
 			line-height: 25px;
+			box-sizing: border-box;
+
 			&:hover {
-				box-sizing: border-box;
 				border-bottom: 1px solid #000;
 			}
 		}
@@ -226,10 +237,10 @@ export default {
 	text-align: center;
 	box-sizing: border-box;
 	height: 0;
-	padding-left: 429px;
+	padding-left: 550px;
 
 	&-cn {
-		padding-left: 402px;
+		padding-left: 520px;
 	}
 
 	.sub-nav-item {
