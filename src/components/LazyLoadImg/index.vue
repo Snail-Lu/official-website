@@ -106,7 +106,7 @@ export default {
 		showDistance: {
 			type: Object,
 			default: () => {
-				bottom: 20;
+				bottom: 10;
 			}
 		},
 		//过渡效果  linear / ease / ease-in / ease-out / ease-in-out

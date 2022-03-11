@@ -5,9 +5,8 @@
 			<a href="https://snail-lu.github.io" target="_blank" class="link-btn">个人博客</a>
 			<a href="https://snail-lu.github.io/portfolio-vue" target="_blank" class="link-btn">作品集</a>
 		</div>
-		<img
+		<lazy-load-img
 			src="https://cdn-hz.skypixel.com/uploads/cn_files/photo/image/203a32f2-5313-4d86-a2b3-3567c295d2ea.jpg@!1920"
-			style="width: 100%"
 		/>
 	</div>
 </template>

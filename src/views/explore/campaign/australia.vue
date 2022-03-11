@@ -3,8 +3,7 @@
 		<!-- 双列图 -->
 		<div class="block-2 flex-box">
 			<div class="flex-item-1 mr-17">
-				<img
-					class="explore-img"
+				<lazy-load-img
 					src="https://cdn-hz.skypixel.com/uploads/cn_files/photo/image/6be1e416-a937-405c-9183-0ab5dfd1d1f2.jpg@!1920"
 				/>
 			</div>
@@ -20,8 +19,7 @@
 				<div class="title">凯恩斯</div>
 			</div>
 			<div class="flex-item-1">
-				<img
-					class="explore-img"
+				<lazy-load-img
 					src="https://cdn-hz.skypixel.com/uploads/cn_files/photo/image/4fadafb9-594d-4cf5-a3e4-d27058696dbe.jpg@!1920"
 				/>
 			</div>
@@ -30,14 +28,12 @@
 		<!-- 双列图 -->
 		<div class="block-2 flex-box">
 			<div class="flex-item-1 mr-17">
-				<img
-					class="explore-img"
+				<lazy-load-img
 					src="https://cdn-hz.skypixel.com/uploads/cn_files/photo/image/99a7e69f-5132-49b7-b984-2aea7b5a71c3.jpg@!1920"
 				/>
 			</div>
 			<div class="flex-item-1">
-				<img
-					class="explore-img"
+				<lazy-load-img
 					src="https://cdn-hz.skypixel.com/uploads/cn_files/photo/image/b8222ae8-837b-464a-bb9a-411c1a791948.jpg@!1920"
 				/>
 			</div>
@@ -49,8 +45,7 @@
 				<div class="title">海边小镇KIAMA</div>
 			</div>
 			<div class="flex-item-1">
-				<img
-					class="explore-img"
+				<lazy-load-img
 					src="https://cdn-usa.skypixel.com/uploads/usa_files/photo/image/9611eb71-f6bf-49e4-8f0b-e4287d7ce132.JPG@!1920"
 				/>
 			</div>
@@ -59,8 +54,7 @@
 		<!-- 双列图 -->
 		<div class="block-2 flex-box">
 			<div class="flex-item-1 mr-17">
-				<img
-					class="explore-img"
+				<lazy-load-img
 					src="https://cdn-hz.skypixel.com/uploads/cn_files/photo/image/954de55b-0aa2-4fbb-af0e-617a72d26c69.jpg@!1920"
 				/>
 			</div>

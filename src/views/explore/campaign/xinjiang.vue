@@ -3,8 +3,7 @@
 		<!-- 双列图 -->
 		<div class="block-2 flex-box">
 			<div class="flex-item-1 mr-17">
-				<img
-					class="explore-img"
+				<lazy-load-img
 					src="https://cdn-usa.skypixel.com/uploads/usa_files/photo/image/2616016f-409f-4213-b5c7-0bbbf77fef84.jpeg@!1920"
 				/>
 			</div>
@@ -20,8 +19,7 @@
 				<div class="title">可可托海地质公园</div>
 			</div>
 			<div class="flex-item-1">
-				<img
-					class="explore-img"
+				<lazy-load-img
 					src="https://cdn-hz.skypixel.com/uploads/cn_files/photo/image/a79525f8-2f2c-421f-ad09-b98a4fec7cac.jpg@!1920"
 				/>
 			</div>
@@ -30,14 +28,12 @@
 		<!-- 双列图 -->
 		<div class="block-2 flex-box">
 			<div class="flex-item-1 mr-17">
-				<img
-					class="explore-img"
+				<lazy-load-img
 					src="https://cdn-hz.skypixel.com/uploads/cn_files/photo/image/078d193c-4589-43c2-9fa4-bf7be803e551.jpg@!1920"
 				/>
 			</div>
 			<div class="flex-item-1">
-				<img
-					class="explore-img"
+				<lazy-load-img
 					src="https://cdn-hz.skypixel.com/uploads/cn_files/photo/image/e098984a-b6a7-4307-bd10-60085e312dc9.jpg@!1920"
 				/>
 			</div>
@@ -49,8 +45,7 @@
 				<div class="title">尉犁县</div>
 			</div>
 			<div class="flex-item-1">
-				<img
-					class="explore-img"
+				<lazy-load-img
 					src="https://cdn-usa.skypixel.com/uploads/usa_files/photo/image/964fdf0a-38fd-429d-8c3c-54c61411276a.jpeg@!1920"
 				/>
 			</div>
@@ -59,8 +54,7 @@
 		<!-- 双列图 -->
 		<div class="block-2 flex-box">
 			<div class="flex-item-1 mr-17">
-				<img
-					class="explore-img"
+				<lazy-load-img
 					src="https://cdn-hz.skypixel.com/uploads/cn_files/photo/image/07fd204a-f69c-4e46-9320-e11ee6e92d07.jpeg@!1920"
 				/>
 			</div>

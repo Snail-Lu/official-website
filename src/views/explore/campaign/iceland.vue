@@ -2,8 +2,7 @@
 	<div class="explore-campaign-container flex-box-column flex-v-center">
 		<!-- 单张横图 -->
 		<div class="block-1 flex-box-column">
-			<img
-				class="explore-img"
+			<lazy-load-img
 				src="https://cdn-usa.skypixel.com/uploads/usa_files/storynode/image/214c3e7a-767d-41b3-9dcc-c43df9b2e5fd.jpg@!1200"
 			/>
 			<div>
@@ -15,8 +14,7 @@
 		<!-- 双列图 -->
 		<div class="block-2 flex-box">
 			<div class="flex-item-1 mr-17">
-				<img
-					class="explore-img"
+				<lazy-load-img
 					src="https://cdn-usa.skypixel.com/uploads/usa_files/storynode/image/6c23f676-d22d-4103-a230-40247a9e08a4.jpg@!1200"
 				/>
 			</div>
@@ -34,8 +32,7 @@
 				<div class="sub-title">冰岛环岛一号公路，通往冰岛各个景点</div>
 			</div>
 			<div class="flex-item-1">
-				<img
-					class="explore-img"
+				<lazy-load-img
 					src="https://cdn-usa.skypixel.com/uploads/usa_files/storynode/image/cef44a9d-67dc-4c89-8daa-f58ce81d9e99.jpg@!1200"
 				/>
 			</div>
@@ -44,8 +41,7 @@
 		<!-- 双列图 -->
 		<div class="block-2 flex-box">
 			<div class="flex-item-1 mr-17">
-				<img
-					class="explore-img"
+				<lazy-load-img
 					src="https://cdn-usa.skypixel.com/uploads/usa_files/storynode/image/9ed78457-e30b-4196-a06a-5abb7cc90f08.jpg@!1200"
 				/>
 			</div>
@@ -67,8 +63,7 @@
 				</div>
 			</div>
 			<div class="flex-item-1">
-				<img
-					class="explore-img"
+				<lazy-load-img
 					src="https://cdn-usa.skypixel.com/uploads/usa_files/storynode/image/6e044548-5158-4235-82cf-be6dc40e1ef2.jpg@!1200"
 				/>
 			</div>
@@ -77,8 +72,7 @@
 		<!-- 双列图 -->
 		<div class="block-2 flex-box">
 			<div class="flex-item-1 mr-17">
-				<img
-					class="explore-img"
+				<lazy-load-img
 					src="https://cdn-usa.skypixel.com/uploads/usa_files/storynode/image/83007411-17f9-4b80-ae17-a184546e7a58.jpg@!1200"
 				/>
 			</div>
@@ -91,8 +85,7 @@
 
 		<!-- 单张横图 -->
 		<div class="block-1 flex-box-column">
-			<img
-				class="explore-img"
+			<lazy-load-img
 				src="https://cdn-usa.skypixel.com/uploads/usa_files/storynode/image/d0757160-7931-4d58-b63b-2298b204ad72.jpg@!1200"
 			/>
 			<div>

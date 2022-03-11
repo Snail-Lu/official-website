@@ -2,9 +2,8 @@
 	<div class="about-container flex-box-column flex-h-center flex-v-center">
 		<div class="title">{{ $t('header.siteInfo') }}</div>
 		<div class="sub-title">{{ $t('header.siteDesc') }}</div>
-		<img
+		<lazy-load-img
 			src="https://images.unsplash.com/photo-1510784722466-f2aa9c52fff6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-			style="width: 100%"
 		/>
 	</div>
 </template>

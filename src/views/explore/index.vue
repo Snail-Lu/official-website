@@ -1,9 +1,8 @@
 <template>
 	<div class="explore-container flex-box-column flex-v-center">
 		<div class="block-1">
-			<img
-				class="explore-img"
-				src="https://cdn-usa.skypixel.com/uploads/usa_files/photo/image/1afd6068-be1f-47a6-8380-20f8eddb0b81.jpg@!1920"
+			<lazy-load-img
+				src="http://cdn-usa.skypixel.com/uploads/usa_files/photo/image/1afd6068-be1f-47a6-8380-20f8eddb0b81.jpg@!1920"
 			/>
 		</div>
 
@@ -11,14 +10,12 @@
 			<div class="title">四季</div>
 			<div class="flex-box flex-h-center flex-v-center">
 				<div class="flex-item-1 mr">
-					<img
-						class="explore-img"
+					<lazy-load-img
 						src="https://cdn-hz.skypixel.com/uploads/cn_files/photo/image/19ace05e-28f3-42e9-9e25-feea37d66281.jpg@!1920"
 					/>
 				</div>
 				<div class="flex-item-1">
-					<img
-						class="explore-img"
+					<lazy-load-img
 						src="https://cdn-hz.skypixel.com/uploads/cn_files/photo/image/b186bff1-f641-48fb-a10c-65ca92bd23f9.jpg@!1920"
 					/>
 				</div>
@@ -26,14 +23,12 @@
 			<div v-if="showMore.season" style="margin-top: 16px">
 				<div class="flex-box flex-h-center flex-v-center">
 					<div class="flex-item-1 mr">
-						<img
-							class="explore-img"
+						<lazy-load-img
 							src="https://cdn-hz.skypixel.com/uploads/cn_files/photo/image/3400a904-b881-498f-8e19-22c8ccb10b62.jpg@!1920"
 						/>
 					</div>
 					<div class="flex-item-1">
-						<img
-							class="explore-img"
+						<lazy-load-img
 							src="https://cdn-hz.skypixel.com/uploads/cn_files/photo/image/508c967c-58b6-4faa-9163-bdba87ac5839.jpg@!1920"
 						/>
 					</div>
@@ -50,20 +45,17 @@
 			<div class="title">旅行</div>
 			<div class="flex-box flex-h-center">
 				<div class="flex-item-1 mr">
-					<img
-						class="explore-img"
+					<lazy-load-img
 						src="https://cdn-hz.skypixel.com/uploads/cn_files/photo/image/8a03c0d3-39eb-4dd2-b651-b0a2db187e00.jpg@!1920"
 					/>
 				</div>
 				<div class="flex-item-1 mr">
-					<img
-						class="explore-img"
+					<lazy-load-img
 						src="https://cdn-hz.skypixel.com/uploads/cn_files/photo/image/19c5c7e5-e614-4631-8436-2ad374f1d708.jpg@!1920"
 					/>
 				</div>
 				<div class="flex-item-1">
-					<img
-						class="explore-img"
+					<lazy-load-img
 						src="https://cdn-hz.skypixel.com/uploads/cn_files/photo/image/dbc171b3-3e81-4ad3-a215-88bff12dd7ca.JPG@!1920"
 					/>
 				</div>
@@ -74,14 +66,12 @@
 			<div class="title">天空</div>
 			<div class="flex-box flex-h-center">
 				<div class="flex-item-2 mr">
-					<img
-						class="explore-img"
+					<lazy-load-img
 						src="https://cdn-hz.skypixel.com/uploads/cn_files/photo/image/6c3f83f7-fdf4-47a6-8091-d5e6e1e24f7c.jpg@!1920"
 					/>
 				</div>
 				<div class="flex-item-1">
-					<img
-						class="explore-img"
+					<lazy-load-img
 						src="https://cdn-hz.skypixel.com/uploads/cn_files/photo/image/646dff26-ed62-48db-ab64-a0e28b0d47f8.jpg@!1920"
 					/>
 				</div>
@@ -92,20 +82,17 @@
 			<div class="title">山峰</div>
 			<div class="flex-box flex-h-center">
 				<div class="flex-item-1 mr">
-					<img
-						class="explore-img"
+					<lazy-load-img
 						src="https://cdn-usa.skypixel.com/uploads/usa_files/photo/image/14363376-027b-435a-857a-5be4e3520212.jpg@!1920"
 					/>
 				</div>
 				<div class="flex-item-1 mr">
-					<img
-						class="explore-img"
+					<lazy-load-img
 						src="https://cdn-usa.skypixel.com/uploads/usa_files/photo/image/fd767ed6-30bb-4396-9c26-97f6b88ebd20.jpg@!1920"
 					/>
 				</div>
 				<div class="flex-item-1">
-					<img
-						class="explore-img"
+					<lazy-load-img
 						src="https://cdn-usa.skypixel.com/uploads/usa_files/photo/image/0259d2d9-e6f3-45c7-bcbf-ab477b1deb25.jpg@!1920"
 					/>
 				</div>
@@ -116,14 +103,12 @@
 			<div class="title">日出日落</div>
 			<div class="flex-box flex-h-center">
 				<div class="flex-item-1 mr">
-					<img
-						class="explore-img"
+					<lazy-load-img
 						src="https://cdn-usa.skypixel.com/uploads/usa_files/photo/image/50c7b1c8-55d8-450c-8465-adbcc98aaeb6.jpg@!1920"
 					/>
 				</div>
 				<div class="flex-item-1">
-					<img
-						class="explore-img"
+					<lazy-load-img
 						src="https://cdn-usa.skypixel.com/uploads/usa_files/photo/image/7b14cb1c-5604-4fa1-b4b0-93612eafa37a.JPG@!1920"
 					/>
 				</div>
@@ -131,14 +116,12 @@
 			<div v-if="showMore.sun" style="margin-top: 16px">
 				<div class="flex-box flex-h-center">
 					<div class="flex-item-1 mr">
-						<img
-							class="explore-img"
+						<lazy-load-img
 							src="https://cdn-usa.skypixel.com/uploads/usa_files/photo/image/be6d281f-100c-4510-9133-535500e7df6b.jpg@!1920"
 						/>
 					</div>
 					<div class="flex-item-1">
-						<img
-							class="explore-img"
+						<lazy-load-img
 							src="https://cdn-usa.skypixel.com/uploads/usa_files/photo/image/14cb6ffc-888f-488c-9c82-5fc7a31d52b3.jpg@!1920"
 						/>
 					</div>

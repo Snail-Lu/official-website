@@ -3,8 +3,7 @@
 		<!-- 双列图 -->
 		<div class="block-2 flex-box">
 			<div class="flex-item-1 mr-17">
-				<img
-					class="explore-img"
+				<lazy-load-img
 					src="https://cdn-hz.skypixel.com/uploads/cn_files/photo/image/b84ea69b-5518-4e20-8736-dda0a7e46ebe.jpg@!1920"
 				/>
 			</div>
@@ -20,8 +19,7 @@
 				<div class="title">陆家嘴</div>
 			</div>
 			<div class="flex-item-1">
-				<img
-					class="explore-img"
+				<lazy-load-img
 					src="https://cdn-hz.skypixel.com/uploads/cn_files/photo/image/6e3a73fa-99cf-41b5-a93b-7662171848d8.jpg@!1920"
 				/>
 			</div>
@@ -30,14 +28,12 @@
 		<!-- 双列图 -->
 		<div class="block-2 flex-box">
 			<div class="flex-item-1 mr-17">
-				<img
-					class="explore-img"
+				<lazy-load-img
 					src="https://cdn-hz.skypixel.com/uploads/cn_files/photo/image/c98e012c-17f3-4b50-b3a0-889561c791b1.JPG@!1920"
 				/>
 			</div>
 			<div class="flex-item-1">
-				<img
-					class="explore-img"
+				<lazy-load-img
 					src="https://cdn-hz.skypixel.com/uploads/cn_files/photo/image/e1bb5deb-5410-4622-9b03-329242196946.JPG@!1920"
 				/>
 			</div>
@@ -47,8 +43,7 @@
 		<div class="block-2 flex-box">
 			<div class="flex-item-1 flex-box-column flex-h-center flex-v-center mr-17"></div>
 			<div class="flex-item-1">
-				<img
-					class="explore-img"
+				<lazy-load-img
 					src="https://cdn-hz.skypixel.com/uploads/cn_files/photo/image/9cd4d14f-d038-4535-8728-dedae7ececf6.jpeg@!1920"
 				/>
 			</div>
@@ -57,8 +52,7 @@
 		<!-- 双列图 -->
 		<div class="block-2 flex-box">
 			<div class="flex-item-1 mr-17">
-				<img
-					class="explore-img"
+				<lazy-load-img
 					src="https://cdn-hz.skypixel.com/uploads/cn_files/photo/image/8d563140-d702-43dd-b755-c954ba7858f4.jpg@!1920"
 				/>
 			</div>

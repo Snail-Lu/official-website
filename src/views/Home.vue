@@ -54,7 +54,7 @@
 				<div class="flex-box flex-h-center">
 					<div class="flex-item-1 flex-box-column flex-h-center flex-v-center">新疆</div>
 					<div class="flex-item-1">
-						<img
+						<lazy-load-img
 							wrapperClass="cursor-pointer"
 							src="https://cdn-hz.skypixel.com/uploads/cn_files/photo/image/adcb401e-e025-4d79-a361-7c4227fa26cf.jpg@!1920"
 							@click="linkTo('/explore/xinjiang')"
