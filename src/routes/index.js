@@ -7,7 +7,7 @@ const routes = [
 	},
 	{
 		path: '/',
-		component: () => import('../components/Layout.vue'),
+		component: () => import('../layout/Layout.vue'),
 		children: [
 			{
 				path: 'collection',
