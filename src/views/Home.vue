@@ -2,10 +2,10 @@
 	<layout>
 		<div class="home-container">
 			<div class="block-1">
-				<img
-					style="width: 100%; display: block"
-					class="cursor-pointer"
+				<lazy-load-img
 					src="https://cdn-usa.skypixel.com/uploads/usa_files/story/bg_image/28fc146f-aad3-473b-b1d3-677e41a0711e.jpg@!story-bg"
+					height="300px"
+					wrapperClass="cursor-pointer"
 					@click="linkTo('/explore/iceland')"
 				/>
 				<div class="title">冰岛</div>
@@ -14,11 +14,9 @@
 			<div class="block-2">
 				<div class="flex-box flex-h-center">
 					<div class="flex-item-1 first-img-box">
-						<img
-							class="cursor-pointer"
-							crossOrigin="anonymous"
+						<lazy-load-img
+							wrapperClass="cursor-pointer"
 							src="https://cdn-hz.skypixel.com/uploads/cn_files/photo/image/6d3caf67-d498-4d49-a819-d82bac344b9b.jpg@!1920"
-							style="width: 100%; display: block"
 							@click="linkTo('/explore/shanghai')"
 						/>
 					</div>
@@ -30,11 +28,9 @@
 				<div class="flex-box flex-h-center">
 					<div class="flex-item-1 flex-box-column flex-h-center flex-v-center">西藏</div>
 					<div class="flex-item-1">
-						<img
-							class="cursor-pointer"
-							crossOrigin="anonymous"
+						<lazy-load-img
+							wrapperClass="cursor-pointer"
 							src="https://cdn-hz.skypixel.com/uploads/cn_files/photo/image/1b32a36b-59bd-4b7d-8ba3-5ce702c3786e.jpg@!1920"
-							style="width: 100%; display: block"
 							@click="linkTo('/explore/tibet')"
 						/>
 					</div>
@@ -44,9 +40,8 @@
 			<div class="block-2">
 				<div class="flex-box flex-h-center">
 					<div class="flex-item-1 first-img-box">
-						<img
-							class="cursor-pointer"
-							style="width: 100%; display: block"
+						<lazy-load-img
+							wrapperClass="cursor-pointer"
 							src="https://cdn-hz.skypixel.com/uploads/cn_files/storynode/image/d7b24793-fcb9-4c87-94be-232d78fe0e1b.jpg@!1200"
 							@click="linkTo('/explore/australia')"
 						/>
@@ -60,8 +55,7 @@
 					<div class="flex-item-1 flex-box-column flex-h-center flex-v-center">新疆</div>
 					<div class="flex-item-1">
 						<img
-							class="cursor-pointer"
-							style="width: 100%; display: block"
+							wrapperClass="cursor-pointer"
 							src="https://cdn-hz.skypixel.com/uploads/cn_files/photo/image/adcb401e-e025-4d79-a361-7c4227fa26cf.jpg@!1920"
 							@click="linkTo('/explore/xinjiang')"
 						/>
