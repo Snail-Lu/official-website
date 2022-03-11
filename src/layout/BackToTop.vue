@@ -44,8 +44,8 @@ export default {
 	bottom: 100px;
 	font-size: 12px;
 	background-color: rgba(255, 255, 255, 0.5);
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 	border-radius: 100%;
 	color: #333;
 	cursor: pointer;
