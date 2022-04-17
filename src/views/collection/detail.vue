@@ -50,7 +50,7 @@ import { onMounted } from '@vue/runtime-core';
 import list from '../../assets/config/collection';
 
 const currentSliderIndex = ref(0);
-const currentScrolleIndex = ref(0);
+const currentScrollIndex = ref(0);
 const dataList = reactive(list);
 const dataId = ref(1);
 const route = useRoute();
@@ -60,34 +60,40 @@ onMounted(() => {
 	dataId.value = id;
 });
 
-// 前翻
-const onPrev = () => {
-	if (currentScrollIndex > 0) {
-		currentScrollIndex.value--;
-		currentSliderIndex.value--;
-	} else if (currentSliderIndex > 0) {
-		currentSliderIndex.value--;
-	}
-};
-
+// 获取当前数据
 const data = computed(() => {
-	if (dataId) {
+	if (dataId.value) {
 		return dataList.find((item) => item.id == dataId.value);
 	}
 	return {};
 });
+
+const top = computed(() => {
+	return -currentScrollIndex.value * 138 + 'px';
+});
+
+// 前翻
+const onPrev = () => {
+	if (currentScrollIndex.value > 0) {
+		currentScrollIndex.value--;
+		currentSliderIndex.value--;
+	} else if (currentSliderIndex.value > 0) {
+		currentSliderIndex.value--;
+	}
+};
+
 // 后翻
 const onNext = () => {
-	if (currentScrollIndex < data.detailImageList.length - 3) {
+	if (currentScrollIndex.value < data.value.detailImageList.length - 3) {
 		currentScrollIndex.value++;
 		currentSliderIndex.value++;
-	} else if (currentSliderIndex < data.detailImageList.length - 1) {
+	} else if (currentSliderIndex.value < data.value.detailImageList.length - 1) {
 		currentSliderIndex.value++;
 	}
 };
 
 const onSelectImage = (index) => {
-	urrentSliderIndex.value = index;
+	currentSliderIndex.value = index;
 };
 </script>
 
