@@ -130,8 +130,8 @@ export default {
 	font-size: 15px;
 	color: #000;
 	font-weight: 400;
-	padding-left: 8px;
 	position: relative;
+	padding: 0 0 30px 8px;
 
 	.slider-box-wrapper-wap {
 		display: none;

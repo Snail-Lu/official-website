@@ -1,13 +1,13 @@
 <template>
 	<div class="collection-detail-container">
-		<div class="header">{{ $t('collection.collection') }} > {{ data.category }}</div>
+		<div class="header" v-if="data">{{ $t('collection.collection') }} > {{ data.category }}</div>
 
 		<div class="image-box">
 			<div class="preview-box">
 				<div class="prev-btn" @click="onPrev">
 					<img class="btn-img" src="/src/assets/images/look-pre.png" />
 				</div>
-				<div class="preview-content flex-box-column flex-v-center">
+				<div class="preview-content flex-box-column flex-v-center" v-if="data">
 					<div class="title">{{ data.category }}</div>
 					<img class="preview-img" :src="data.detailImageList[currentSliderIndex].url" />
 					<div class="indicator">{{ currentSliderIndex + 1 }}/{{ data.detailImageList.length }}</div>
@@ -43,81 +43,51 @@
 		</div>
 	</div>
 </template>
-<script>
-import dataList from '../../assets/config/collection';
-export default {
-	data() {
-		return {
-			currentSliderIndex: 0,
-			currentScrollIndex: 0,
-			dataList
-		};
-	},
-	computed: {
-		top() {
-			return -this.currentScrollIndex * 138 + 'px';
-		},
-		data() {
-			let d = {};
-			this.dataList.forEach((data) => {
-				if (data.id == this.dataId) {
-					d = data;
-				}
-			});
-			return d;
-		}
-	},
-	created() {
-		const { id } = this.$route.query;
-		this.dataId = id;
-	},
-	methods: {
-		// 前翻
-		// onPrev() {
-		// 	const { currentSliderIndex } = this;
-		// 	if (currentSliderIndex > 0) {
-		// 		this.currentSliderIndex = currentSliderIndex - 1;
-		// 	} else {
-		// 		this.currentSliderIndex = this.data.detailImageList.length - 1;
-		// 	}
-		// },
+<script setup>
+import { computed, reactive, ref } from '@vue/reactivity';
+import { useRoute } from 'vue-router';
+import { onMounted } from '@vue/runtime-core';
+import list from '../../assets/config/collection';
 
-		// // 后翻
-		// onNext() {
-		// 	const { currentSliderIndex, data } = this;
-		// 	if (currentSliderIndex < data.detailImageList.length - 1) {
-		// 		this.currentSliderIndex = currentSliderIndex + 1;
-		// 	} else {
-		// 		this.currentSliderIndex = 0;
-		// 	}
-		// },
+const currentSliderIndex = ref(0);
+const currentScrolleIndex = ref(0);
+const dataList = reactive(list);
+const dataId = ref(1);
+const route = useRoute();
 
-		// 前翻
-		onPrev() {
-			const { currentScrollIndex, currentSliderIndex } = this;
-			if (currentScrollIndex > 0) {
-				this.currentScrollIndex = currentScrollIndex - 1;
-				this.currentSliderIndex = currentSliderIndex - 1;
-			} else if (currentSliderIndex > 0) {
-				this.currentSliderIndex = currentSliderIndex - 1;
-			}
-		},
+onMounted(() => {
+	const { id } = route.query;
+	dataId.value = id;
+});
 
-		// 后翻
-		onNext() {
-			const { currentScrollIndex, currentSliderIndex, data } = this;
-			if (currentScrollIndex < data.detailImageList.length - 4) {
-				this.currentScrollIndex = currentScrollIndex + 1;
-				this.currentSliderIndex = currentSliderIndex + 1;
-			} else if (currentSliderIndex < data.detailImageList.length - 1) {
-				this.currentSliderIndex = currentSliderIndex + 1;
-			}
-		},
-
-		onSelectImage(index) {
-			this.currentSliderIndex = index;
-		}
+// 前翻
+const onPrev = () => {
+	if (currentScrollIndex > 0) {
+		currentScrollIndex.value--;
+		currentSliderIndex.value--;
+	} else if (currentSliderIndex > 0) {
+		currentSliderIndex.value--;
 	}
+};
+
+const data = computed(() => {
+	if (dataId) {
+		return dataList.find((item) => item.id == dataId.value);
+	}
+	return {};
+});
+// 后翻
+const onNext = () => {
+	if (currentScrollIndex < data.detailImageList.length - 3) {
+		currentScrollIndex.value++;
+		currentSliderIndex.value++;
+	} else if (currentSliderIndex < data.detailImageList.length - 1) {
+		currentSliderIndex.value++;
+	}
+};
+
+const onSelectImage = (index) => {
+	urrentSliderIndex.value = index;
 };
 </script>
 
@@ -126,7 +96,7 @@ export default {
 	font-size: 18px;
 	color: #000;
 	font-weight: 400;
-	padding-left: 8px;
+	padding: 0 0 30px 8px;
 
 	.header {
 		height: 50px;
@@ -153,8 +123,8 @@ export default {
 			line-height: 80px;
 		}
 		.preview-img {
-			width: auto;
-			height: 670px;
+			width: 800px;
+			height: 550px;
 			object-fit: cover;
 		}
 
@@ -186,9 +156,9 @@ export default {
 	}
 
 	.image-list-box {
-		height: 670px;
+		height: 530px;
 		width: 160px;
-		margin: 80px 0 0 200px;
+		margin: 100px 0 0 200px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
